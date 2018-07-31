@@ -156,9 +156,15 @@ header {
 				}
 
 				@media all and (max-width: 767px) {
-					width: 60%;
+					width: 100%;
 					margin: 0 auto;
 					grid-template-columns: 1fr 1fr;
+				}
+
+				@media all and (max-width: 575px) {
+					width: 100%;
+					margin: 0 auto;
+					grid-template-columns: 1fr;
 				}
 
 				a {
@@ -369,7 +375,13 @@ header {
 					}
 
 					@media all and (max-width: 767px) {
+						max-width: 200px;
+						max-height: 200px;
 						border-width: 3px;
+					}
+
+					@media all and (max-width: 575px) {
+						display: none;
 					}
 				}
 			}
@@ -420,13 +432,27 @@ main {
 		width:  100%;
 		padding: 20px 25px;
 	}
+
+	@media all and (max-width: 575px) {
+		padding: 15px 0;
+	}
 }
 
 .main-slideshow-wrapper {
 	height: 500px;
 	background: radial-gradient(#000, transparent);
 	margin-bottom: 40px;
-	padding: 50px; 
+	padding: 30px; 
+
+	@media all and (max-width: 767px) {
+		height: 400px;
+		margin-bottom: 20px;
+	}
+
+	@media all and (max-width: 575px) {
+		height: 300px;
+		padding: 10px 0;
+	}
 
 	&>h2 {
 		display: none;
@@ -521,6 +547,12 @@ main {
 		width: 100%;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 30px;
+	}
+
+	@media all and (max-width: 575px) {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
 	}
 
 	&>h2 {
@@ -672,6 +704,10 @@ main {
 	@media all and (max-width: 991px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	@media all and (max-width: 575px) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .main-work-item {
@@ -684,6 +720,10 @@ main {
 
 	&:hover {
 		border-color: @thirdColor;
+	}
+
+	& img {
+		width: 100%;
 	}
 }
 
