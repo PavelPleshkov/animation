@@ -9,10 +9,6 @@ body {
 body {
   font-family: Georgia, sans-serif;
 }
-.grid-wrapper {
-  height: 100%;
-  margin: 0 auto;
-}
 header {
   background-color: #290000;
   border-top: 5px solid #76c38f;
@@ -33,20 +29,21 @@ header:hover {
   }
 }
 header .header-wrapper {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 120px 50px 120px;
   box-sizing: border-box;
 }
 @media all and (max-width: 1199px) {
   header .header-wrapper {
-    width: 970px;
+    max-width: 970px;
     padding: 30px 35px;
   }
 }
 @media all and (max-width: 991px) {
   header .header-wrapper {
-    width: 100%;
+    max-width: 100%;
     padding: 20px 25px;
   }
 }
@@ -135,7 +132,6 @@ header .header-wrapper .header-top .header-top-title:active a .header-top-title-
 header .header-wrapper .header-top .header-top-menu {
   list-style: none;
   margin-top: 2px;
-  margin-right: -20px;
   float: right;
   display: grid;
   grid-auto-rows: 35px;
@@ -163,6 +159,8 @@ header .header-wrapper .header-top .header-top-menu {
 }
 header .header-wrapper .header-top .header-top-menu a {
   display: block;
+  margin: auto;
+  width: auto;
   padding: 0 20px;
   color: #ffffff;
   font-size: 13px;

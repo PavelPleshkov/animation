@@ -15,10 +15,13 @@ body {
 	font-family: Georgia, sans-serif;
 }
 
-.grid-wrapper {
-	height: 100%;
-	margin: 0 auto;
-}
+// .grid-wrapper {
+// 	height: 100%;
+// 	margin: 0 auto;
+// 	display: grid;
+// 	grid-template-columns: 1fr;
+// 	grid-template-rows: auto 1fr auto;
+// }
 
 header {
 	background-color:  @headerColor;
@@ -42,17 +45,18 @@ header {
 	}
 
 	.header-wrapper {
-		width: 1200px;
+		width: 100%;
+		max-width: 1200px;
 		margin: 0 auto;
 		padding: 40px 120px 50px 120px;
 		box-sizing: border-box;
 		
 		@media all and (max-width: 1199px) {
-			width:  970px;
+			max-width:  970px;
 			padding: 30px 35px;
 		}
 		@media all and (max-width: 991px) {
-			width: 100%;
+			max-width: 100%;
 			padding: 20px 25px;
 		}
 
@@ -144,7 +148,6 @@ header {
 			.header-top-menu {
 				list-style: none;
 				margin-top: 2px;
-				margin-right: -20px;
 				float: right;
 				display: grid;
 				grid-auto-rows: 35px;
@@ -169,6 +172,8 @@ header {
 
 				a {
 					display: block;
+					margin: auto;
+					width: auto;
 					padding: 0 20px;
 					color:  #ffffff;
 					font-size: 13px;
