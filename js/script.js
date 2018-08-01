@@ -39,15 +39,15 @@ jQuery(document).ready(function() {
 		offset: 100
 	});
 
-	jQuery('.footer-bottom-wrapper p:first-child').addClass("hiddenContent").viewportChecker({
-		classToRemove: 'hiddenContent',
-		classToAdd: 'visibleContent animated fadeInLeft',
-		offset: 25
-	});
+	// jQuery('.footer-bottom-wrapper p:first-child').addClass("hiddenContent").viewportChecker({
+	// 	classToRemove: 'hiddenContent',
+	// 	classToAdd: 'visibleContent animated fadeInLeft',
+	// 	offset: 100
+	// });
 
-	jQuery('.footer-bottom-wrapper p:last-child').addClass("hiddenContent").viewportChecker({
-		classToRemove: 'hiddenContent',
-		classToAdd: 'visibleContent animated fadeInRight',
-		offset: 25
-	});
+	// jQuery('.footer-bottom-wrapper p:last-child').addClass("hiddenContent").viewportChecker({
+	// 	classToRemove: 'hiddenContent',
+	// 	classToAdd: 'visibleContent animated fadeInRight',
+	// 	offset: 100
+	// });
 });
