@@ -20,10 +20,20 @@ header {
   background-size: cover;
   animation: panorama 30s linear infinite alternate 0s;
 }
+@media all and (max-width: 767px) {
+  header {
+    animation-duration: 45s;
+  }
+}
+@media all and (max-width: 575px) {
+  header {
+    animation-duration: 60s;
+  }
+}
 header:hover {
   animation-play-state: paused;
 }
-@media all and (max-width: 767px) {
+@media all and (pointer: coarse) and (max-width: 991px) {
   header:hover {
     animation-play-state: running;
   }

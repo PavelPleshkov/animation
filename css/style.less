@@ -31,10 +31,18 @@ header {
 	// background-position: 50% 50%;
 	animation: panorama 30s linear infinite alternate 0s;
 
+	@media all and (max-width: 767px) {
+		animation-duration: 45s;
+	}
+
+	@media all and (max-width: 575px) {
+		animation-duration: 60s;
+	}
+
 	&:hover {
 		animation-play-state: paused;
 
-		@media all and (max-width: 767px) {
+		@media all and (pointer: coarse) and (max-width: 991px) {
 			animation-play-state: running;
 		}
 	}
