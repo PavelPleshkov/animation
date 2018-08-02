@@ -18,18 +18,22 @@ header {
   border-top: 5px solid #76c38f;
   background: url(../img/panorama.jpg) no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
-  animation: panorama 5s linear infinite alternate 0s;
+  animation: panorama 30s linear infinite alternate 0s;
 }
 header:hover {
   animation-play-state: paused;
 }
+@media all and (max-width: 767px) {
+  header:hover {
+    animation-play-state: running;
+  }
+}
 @keyframes panorama {
   from {
-    left: 0;
+    background-position: left;
   }
   to {
-    left: 100%;
+    background-position: right;
   }
 }
 header .header-wrapper {

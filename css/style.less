@@ -28,19 +28,23 @@ header {
 	border-top: 5px solid @thirdColor;
 	background: url(../img/panorama.jpg) no-repeat;
 	background-size: cover;
-	background-position: 50% 50%;
-	animation: panorama 5s linear infinite alternate 0s;
+	// background-position: 50% 50%;
+	animation: panorama 30s linear infinite alternate 0s;
 
 	&:hover {
 		animation-play-state: paused;
+
+		@media all and (max-width: 767px) {
+			animation-play-state: running;
+		}
 	}
 
 	@keyframes panorama {
 		from {
-			left: 0;
+			background-position: left;
 		}
 		to {
-			left: 100%;
+			background-position: right;
 		}
 	}
 
