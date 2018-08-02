@@ -69,7 +69,6 @@ header .header-wrapper .header-top:after {
 }
 header .header-wrapper .header-top .header-top-title {
   float: left;
-  display: inline-block;
 }
 @media all and (max-width: 991px) {
   header .header-wrapper .header-top .header-top-title {
@@ -977,7 +976,7 @@ footer {
   color: #303030;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14.4px;
+  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   border-radius: 10px;
